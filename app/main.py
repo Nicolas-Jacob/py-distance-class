@@ -6,6 +6,11 @@ class Distance:
     def __init__(self, km: Union[int, float]) -> None:
         self.km: Union[int, float] = km
 
+    @classmethod
+    def from_miles(cls, miles: float) -> Distance:
+        return cls(miles * 1.60934)
+
+
     def __str__(self) -> str:
         return f"Distance: {self.km} kilometers."
 
