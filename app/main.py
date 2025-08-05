@@ -10,7 +10,6 @@ class Distance:
     def from_miles(cls, miles: float) -> Distance:
         return cls(miles * 1.60934)
 
-
     def __str__(self) -> str:
         return f"Distance: {self.km} kilometers."
 
